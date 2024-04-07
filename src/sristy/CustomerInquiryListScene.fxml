@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sristy.CustomerInquiryListSceneController">
+   <children>
+      <Label layoutX="235.0" layoutY="32.0" text="Customer Inquiry List">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="316.0" layoutY="536.0" mnemonicParsing="false" text="Go back to Dashboard" />
+      <ListView fx:id="notificationListView" layoutX="66.0" layoutY="122.0" prefHeight="348.0" prefWidth="672.0" />
+      <Button layoutX="317.0" layoutY="492.0" mnemonicParsing="false" onAction="#openInquiryButtonOnClick" text="Open Selected Inquiry" />
+   </children>
+</AnchorPane>
