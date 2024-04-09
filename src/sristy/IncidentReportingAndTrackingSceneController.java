@@ -14,7 +14,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -52,8 +51,30 @@ public class IncidentReportingAndTrackingSceneController implements Initializabl
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        incidentDepartmentManager = new IncidentDepartmentManager("Username", "Password");
 
+    }    
+
+    @FXML
+    private void backToDashboardButtonOnClick(ActionEvent event) throws IOException {
+        Button button = (Button) event.getSource();
+        Scene currentScene = button.getScene();
+        Stage currentStage = (Stage) currentScene.getWindow();
+        
+        FXMLLoader loader = new FXMLLoader(IncidentDepartmentManagerDashboardSceneController.class.getResource("IncidentDepartmentManagerDashboardScene.fxml"));
+        
+        Scene newScene = new Scene(loader.load());
+        
+        IncidentDepartmentManagerDashboardSceneController controllerClass = loader.getController();
+        
+        controllerClass.initializeScene(incidentDepartmentManager);
+
+        currentStage.setScene(newScene);
+    }
+    
+    public void initializeScene(IncidentDepartmentManager user)
+    {
+        this.incidentDepartmentManager = user;
+        
         reportTitleTableColumn.setCellValueFactory(new PropertyValueFactory<>("reportTitle"));
         dateIssuedTableColumn.setCellValueFactory(new PropertyValueFactory<>("dateIssued"));
         incidentLocationTableColumn.setCellValueFactory(new PropertyValueFactory<>("incidentLocation"));
@@ -76,19 +97,6 @@ public class IncidentReportingAndTrackingSceneController implements Initializabl
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(IncidentReportingAndTrackingSceneController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }    
-
-    @FXML
-    private void backToDashboardButtonOnClick(ActionEvent event) throws IOException {
-        Button button = (Button) event.getSource();
-        Scene currentScene = button.getScene();
-        Stage currentStage = (Stage) currentScene.getWindow();
-        
-        Parent root = FXMLLoader.load(IncidentDepartmentManagerDashboardSceneController.class.getResource("IncidentDepartmentManagerDashboardScene.fxml"));
-        
-        Scene newScene = new Scene(root);
-
-        currentStage.setScene(newScene);
     }
     
 }

@@ -8,14 +8,14 @@
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sristy.IncidentDepartmentManagerDashboardSceneController">
    <children>
       <Button layoutX="368.0" layoutY="516.0" mnemonicParsing="false" onAction="#logoutButtonOnClick" text="Logout" />
-      <Button layoutX="342.0" layoutY="161.0" mnemonicParsing="false" text="Incident Report" />
-      <Button layoutX="283.0" layoutY="202.0" mnemonicParsing="false" text="Messaging &amp; Collaboration Tools" />
-      <Button layoutX="243.0" layoutY="244.0" mnemonicParsing="false" text="Incident Analysis and root cause investigation" />
-      <Button layoutX="304.0" layoutY="285.0" mnemonicParsing="false" text="Incident Report Generation" />
-      <Button layoutX="290.0" layoutY="331.0" mnemonicParsing="false" text="Resource Allocation &amp; Dispatch" />
-      <Button layoutX="222.0" layoutY="373.0" mnemonicParsing="false" text="Integration with Emergency Services and Authorities" />
-      <Button layoutX="302.0" layoutY="417.0" mnemonicParsing="false" text="Historical Incident Database" />
-      <Button layoutX="300.0" layoutY="461.0" mnemonicParsing="false" text="Incident Recovery Planning" />
+      <Button layoutX="342.0" layoutY="161.0" mnemonicParsing="false" onAction="#incidentReportButtonOnClick" text="Incident Report" />
+      <Button layoutX="283.0" layoutY="202.0" mnemonicParsing="false" onAction="#messagingButtonOnClick" text="Messaging &amp; Collaboration Tools" />
+      <Button layoutX="243.0" layoutY="244.0" mnemonicParsing="false" onAction="#incidentAnalysisButtonOnClick" text="Incident Analysis and root cause investigation" />
+      <Button layoutX="304.0" layoutY="285.0" mnemonicParsing="false" onAction="#reportGenerationButtonOnClick" text="Incident Report Generation" />
+      <Button layoutX="290.0" layoutY="331.0" mnemonicParsing="false" onAction="#resourceAllocationButtonOnClick" text="Resource Allocation &amp; Dispatch" />
+      <Button layoutX="222.0" layoutY="373.0" mnemonicParsing="false" onAction="#emergencyServiceButtonOnClick" text="Integration with Emergency Services and Authorities" />
+      <Button layoutX="302.0" layoutY="417.0" mnemonicParsing="false" onAction="#incidentDatabaseButtonOnClick" text="Historical Incident Database" />
+      <Button layoutX="300.0" layoutY="461.0" mnemonicParsing="false" onAction="#incidentRecoveryButtonOnClick" text="Incident Recovery Planning" />
       <Label layoutX="174.0" layoutY="14.0" prefHeight="117.0" prefWidth="452.0" text="Incident Department Manager Dashboard" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="Bauhaus 93" size="32.0" />
