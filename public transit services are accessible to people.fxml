@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="873.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="PublicTransitServicesAreAccessibleToPeopleController">
+   <children>
+      <Label layoutX="293.0" layoutY="48.0" text="public transit services are accessible to people" />
+      <Label layoutX="29.0" layoutY="169.0" text="Wheelchair Ramps and Boarding Platforms:" />
+      <Label layoutX="37.0" layoutY="238.0" text="Priority Seating and Clear Signage:" />
+      <Label layoutX="40.0" layoutY="323.0" text="Accessible Fare Payment Systems:" />
+      <TextField layoutX="330.0" layoutY="164.0" />
+      <TextField layoutX="293.0" layoutY="233.0" />
+      <TextField layoutX="293.0" layoutY="318.0" />
+   </children>
+</AnchorPane>

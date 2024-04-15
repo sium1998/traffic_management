@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="687.0" prefWidth="849.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Mainpkg.TrafficAccidentsAndImproveRoadSafetyController">
+   <children>
+      <Label fx:id="namelabel" layoutX="236.0" layoutY="48.0" prefHeight="31.0" prefWidth="442.0" text=" Traffic accidents and improve road safety " textFill="#121bc9">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="139.0" text="Road condition:" />
+      <TextField fx:id="roadcontextfield" layoutX="236.0" layoutY="134.0" />
+      <Label layoutX="102.0" layoutY="174.0" text="Accident Records:" />
+      <Label layoutX="93.0" layoutY="287.0" text="Traffic Volumes:" />
+      <Label layoutX="110.0" layoutY="212.0" text="Accident Area:" />
+      <TextField fx:id="recordstextfield" layoutX="236.0" layoutY="168.0" />
+      <TextArea fx:id="descriptionall" layoutX="639.0" layoutY="185.0" prefHeight="110.0" prefWidth="147.0" />
+      <DatePicker fx:id="datepick" layoutX="197.0" layoutY="329.0" />
+      <Label layoutX="144.0" layoutY="334.0" text="Date:" />
+      <Label layoutX="103.0" layoutY="246.0" text="Live location:" />
+      <TextField fx:id="liveloactiontextfield" layoutX="213.0" layoutY="247.0" />
+      <TextField fx:id="accidenrareatextfield" layoutX="220.0" layoutY="209.0" />
+      <TextField fx:id="trafficvoltextfield" layoutX="220.0" layoutY="282.0" />
+      <Label layoutX="542.0" layoutY="230.0" text="Discription:" />
+      <TextArea fx:id="showalloutputtextarea" layoutX="163.0" layoutY="455.0" prefHeight="200.0" prefWidth="562.0" />
+      <Button fx:id="clickbutton" layoutX="412.0" layoutY="401.0" mnemonicParsing="false" text="Click" />
+   </children>
+</AnchorPane>
