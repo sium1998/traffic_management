@@ -34,16 +34,23 @@ public class ConductAwarenessSurveysController implements Initializable {
     @FXML
     private TextField questionFiveTextField;
 
-    /**
-     * Initializes the controller class.
-     */
+    ToggleGroup tg1,tg2;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        tg1= new ToggleGroup();
+        tg2= new ToggleGroup();
+        beforeCampaignRadioButton.setToggleGroup(tg1);
+        afterCampaignRadioButton.setToggleGroup(tg2);
+
     }    
 
     @FXML
     private void confirmButtonOnMouseClicked(ActionEvent event) {
+    }
+
+    @FXML
+    private void backButtonOnMouseClicked(ActionEvent event) {
     }
     
 }

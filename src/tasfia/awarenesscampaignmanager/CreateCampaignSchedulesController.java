@@ -45,5 +45,9 @@ public class CreateCampaignSchedulesController implements Initializable {
     @FXML
     private void notifyWorkersButtonOnMouseClicked(ActionEvent event) {
     }
+
+    @FXML
+    private void backButtonOnMouseClicked(ActionEvent event) {
+    }
     
 }

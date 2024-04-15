@@ -8,8 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="674.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="awarenesscampaignmanager.CreateNewCampaignProjectController">
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="awarenesscampaignmanager.CreateNewCampaignProjectController">
    <children>
       <Label layoutX="34.0" layoutY="26.0" prefHeight="30.0" prefWidth="86.0" text="Campaign title" />
       <Label layoutX="34.0" layoutY="56.0" prefHeight="30.0" prefWidth="86.0" text="Purpose" />
@@ -42,5 +41,6 @@
             <TableColumn fx:id="endDateTableColumn" prefWidth="110.0" text="End date" />
         </columns>
       </TableView>
+      <Button layoutX="555.0" layoutY="534.0" mnemonicParsing="false" onAction="#backButtonOnMouseclicked" text="Back" />
    </children>
 </AnchorPane>
