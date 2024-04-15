@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="awarenesscampaignmanager.CreateCampaignSchedulesController">
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="awarenesscampaignmanager.CreateCampaignSchedulesController">
    <children>
       <Label layoutX="47.0" layoutY="41.0" prefHeight="28.0" prefWidth="115.0" text="Time of campaign" />
       <Label layoutX="47.0" layoutY="83.0" prefHeight="28.0" prefWidth="115.0" text="Date of campaign" />
@@ -20,5 +20,6 @@
       <TextField fx:id="timeOfCampaignTextField" layoutX="168.0" layoutY="43.0" />
       <Button layoutX="226.0" layoutY="256.0" mnemonicParsing="false" onAction="#createCampaignButtonOnMouseClicked" prefHeight="95.0" prefWidth="149.0" text="Create campaign" />
       <Button layoutX="41.0" layoutY="256.0" mnemonicParsing="false" onAction="#notifyWorkersButtonOnMouseClicked" prefHeight="95.0" prefWidth="135.0" text="Notify workers" />
+      <Button layoutX="154.0" layoutY="377.0" mnemonicParsing="false" onAction="#backButtonOnMouseClicked" prefHeight="39.0" prefWidth="83.0" text="Back" />
    </children>
 </AnchorPane>
