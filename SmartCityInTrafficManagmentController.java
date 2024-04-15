@@ -40,19 +40,19 @@ public class SmartCityInTrafficManagmentController implements Initializable {
     @FXML
     private TableView<?> informationallview;
     @FXML
-    private TableColumn<?, ?> citytablecol;
+    private TableColumn<string, string> citytablecol;
     @FXML
-    private TableColumn<?, ?> trafficareatablecol;
+    private TableColumn<string, string> trafficareatablecol;
     @FXML
-    private TableColumn<?, ?> officertablecol;
+    private TableColumn<string, string> officertablecol;
     @FXML
-    private TableColumn<?, ?> mayortablecol;
+    private TableColumn<string, string> mayortablecol;
     @FXML
-    private TableColumn<?, ?> trafficcondtablecol;
+    private TableColumn<string, string> trafficcondtablecol;
     @FXML
-    private TableColumn<?, ?> ptntablecol;
+    private TableColumn<string, string> ptntablecol;
     @FXML
-    private TableColumn<?, ?> closeroadtablecol;
+    private TableColumn<string, string> closeroadtablecol;
     @FXML
     private Button submitbutton;
     @FXML
@@ -132,55 +132,55 @@ public class SmartCityInTrafficManagmentController implements Initializable {
         return citytablecol;
     }
 
-    public void setCitytablecol(TableColumn<?, ?> citytablecol) {
+    public void setCitytablecol(TableColumn<string, string> citytablecol) {
         this.citytablecol = citytablecol;
     }
 
-    public TableColumn<?, ?> getTrafficareatablecol() {
+    public TableColumn<string, string> getTrafficareatablecol() {
         return trafficareatablecol;
     }
 
-    public void setTrafficareatablecol(TableColumn<?, ?> trafficareatablecol) {
+    public void setTrafficareatablecol(TableColumn<string, string> trafficareatablecol) {
         this.trafficareatablecol = trafficareatablecol;
     }
 
-    public TableColumn<?, ?> getOfficertablecol() {
+    public TableColumn<string, string> getOfficertablecol() {
         return officertablecol;
     }
 
-    public void setOfficertablecol(TableColumn<?, ?> officertablecol) {
+    public void setOfficertablecol(TableColumn<string, string> officertablecol) {
         this.officertablecol = officertablecol;
     }
 
-    public TableColumn<?, ?> getMayortablecol() {
+    public TableColumn<string, string> getMayortablecol() {
         return mayortablecol;
     }
 
-    public void setMayortablecol(TableColumn<?, ?> mayortablecol) {
+    public void setMayortablecol(TableColumn<string, string> mayortablecol) {
         this.mayortablecol = mayortablecol;
     }
 
-    public TableColumn<?, ?> getTrafficcondtablecol() {
+    public TableColumn<string, string> getTrafficcondtablecol() {
         return trafficcondtablecol;
     }
 
-    public void setTrafficcondtablecol(TableColumn<?, ?> trafficcondtablecol) {
+    public void setTrafficcondtablecol(TableColumn<string, string> trafficcondtablecol) {
         this.trafficcondtablecol = trafficcondtablecol;
     }
 
-    public TableColumn<?, ?> getPtntablecol() {
+    public TableColumn<string, string> getPtntablecol() {
         return ptntablecol;
     }
 
-    public void setPtntablecol(TableColumn<?, ?> ptntablecol) {
+    public void setPtntablecol(TableColumn<string, string> ptntablecol) {
         this.ptntablecol = ptntablecol;
     }
 
-    public TableColumn<?, ?> getCloseroadtablecol() {
+    public TableColumn<string, string> getCloseroadtablecol() {
         return closeroadtablecol;
     }
 
-    public void setCloseroadtablecol(TableColumn<?, ?> closeroadtablecol) {
+    public void setCloseroadtablecol(TableColumn<string, string> closeroadtablecol) {
         this.closeroadtablecol = closeroadtablecol;
     }
 
@@ -238,13 +238,13 @@ public class SmartCityInTrafficManagmentController implements Initializable {
         this.officernametextfield = officernametextfield;
         this.ptitextfield = ptitextfield;
         this.informationallview = informationallview;
-        this.citytablecol = citytablecol;
-        this.trafficareatablecol = trafficareatablecol;
-        this.officertablecol = officertablecol;
-        this.mayortablecol = mayortablecol;
-        this.trafficcondtablecol = trafficcondtablecol;
-        this.ptntablecol = ptntablecol;
-        this.closeroadtablecol = closeroadtablecol;
+        this.citytablecol = (TableColumn<string, string>) citytablecol;
+        this.trafficareatablecol = (TableColumn<string, string>) trafficareatablecol;
+        this.officertablecol = (TableColumn<string, string>) officertablecol;
+        this.mayortablecol = (TableColumn<string, string>) mayortablecol;
+        this.trafficcondtablecol = (TableColumn<string, string>) trafficcondtablecol;
+        this.ptntablecol = (TableColumn<string, string>) ptntablecol;
+        this.closeroadtablecol = (TableColumn<string, string>) closeroadtablecol;
         this.submitbutton = submitbutton;
         this.livemapstextarea = livemapstextarea;
         this.cameraandmonitextarea = cameraandmonitextarea;
