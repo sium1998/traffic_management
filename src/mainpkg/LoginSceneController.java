@@ -4,8 +4,11 @@
  */
 package mainpkg;
 
+<<<<<<< HEAD
 import hasibul.CommercialDriverDashboardSceneController;
 import hasibul.modelclasses.CommercialDriver;
+=======
+>>>>>>> main
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
@@ -82,6 +85,7 @@ public class LoginSceneController implements Initializable {
                 alert.showAndWait();
             }
         }
+<<<<<<< HEAD
         else if (usertypeComboBox.getSelectionModel().getSelectedItem().equals("Commercial Driver"))
         {
             CommercialDriver user = new CommercialDriver();
@@ -125,6 +129,8 @@ public class LoginSceneController implements Initializable {
             alert.setContentText("Please choose a user");
             alert.showAndWait();
         }
+=======
+>>>>>>> main
     }
     
 }

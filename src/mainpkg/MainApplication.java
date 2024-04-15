@@ -4,9 +4,13 @@
  */
 package mainpkg;
 
+<<<<<<< HEAD
 import hasibul.modelclasses.RoadData;
 import hasibul.modelclasses.CommercialDriver;
 import hasibul.modelclasses.RestStation;
+=======
+import hasibul.RoadData;
+>>>>>>> main
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -44,7 +48,10 @@ public class MainApplication extends Application {
         initializeIncidentReports();
         initializeMessageThreads();
         createDummyUsers();
+<<<<<<< HEAD
         initializeRestStations();
+=======
+>>>>>>> main
 
         launch(args);
     }
@@ -133,7 +140,10 @@ public class MainApplication extends Application {
         File f;
         IncidentDepartmentManager user1;
         BankingManager user2;
+<<<<<<< HEAD
         CommercialDriver user3;
+=======
+>>>>>>> main
         
         f = new File("IncidentDepartmentManager.bin");
         
@@ -150,6 +160,7 @@ public class MainApplication extends Application {
             user2 = new BankingManager("Sristy2", "1234567");
             user2.saveNewToDatabase();
         }
+<<<<<<< HEAD
         
         f = new File("CommercialDriver.bin");
         
@@ -158,5 +169,7 @@ public class MainApplication extends Application {
             user3 = new CommercialDriver("Hasibul1", "1234567");
             user3.saveNewToDatabase();
         }
+=======
+>>>>>>> main
     }
 }
