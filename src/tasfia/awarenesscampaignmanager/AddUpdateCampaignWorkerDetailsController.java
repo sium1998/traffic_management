@@ -2,9 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package awarenesscampaignmanager;
+package tasfia.awarenesscampaignmanager;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,6 +14,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 /**
  * FXML Controller class
@@ -36,24 +38,32 @@ public class AddUpdateCampaignWorkerDetailsController implements Initializable {
     @FXML
     private TextField phoneNoTextField;
     @FXML
-    private TableView<?> campaignWorkerDetailsTableView;
+    private TableView<CampaignWorker> campaignWorkerDetailsTableView;
     @FXML
-    private TableColumn<?, ?> nameTableColumn;
+    private TableColumn<CampaignWorker, String> nameTableColumn;
     @FXML
-    private TableColumn<?, ?> genderTableColumn;
+    private TableColumn<CampaignWorker, String> genderTableColumn;
     @FXML
-    private TableColumn<?, ?> placeOfServiceTableColumn;
+    private TableColumn<CampaignWorker, String> placeOfServiceTableColumn;
     @FXML
-    private TableColumn<?, ?> noOfCampaignsTableColumn;
+    private TableColumn<CampaignWorker, String> noOfCampaignsTableColumn;
     @FXML
-    private TableColumn<?, ?> phoneNumberTableColumn;
+    private TableColumn<CampaignWorker, String> phoneNumberTableColumn;
 
-    /**
-     * Initializes the controller class.
-     */
+    ToggleGroup tg1,tg2,tg3;
+    ArrayList<CampaignWorker> studList;
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        tg1= new ToggleGroup();
+        tg2= new ToggleGroup();
+        tg3= new ToggleGroup();
+        maleRadioButton.setToggleGroup(tg1);
+        femaleRadioButton.setToggleGroup(tg2);
+        othersRadioButton.setToggleGroup(tg3);
+
+        
     }    
 
     @FXML
