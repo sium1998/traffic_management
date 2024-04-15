@@ -12,14 +12,14 @@
             <Font name="Bauhaus 93" size="36.0" />
          </font>
       </Label>
-      <Button layoutX="267.0" layoutY="160.0" mnemonicParsing="false" text="Rest Area and Fuel Station Information" />
-      <Button layoutX="345.0" layoutY="205.0" mnemonicParsing="false" text="Traffic Updates" />
-      <Button layoutX="354.0" layoutY="248.0" mnemonicParsing="false" text="Driver Timer" />
-      <Button layoutX="310.0" layoutY="292.0" mnemonicParsing="false" text="Customize Vehicle Profile" />
-      <Button layoutX="307.0" layoutY="336.0" mnemonicParsing="false" text="Compliance Notifications" />
-      <Button layoutX="350.0" layoutY="377.0" mnemonicParsing="false" text="Hazard Alerts" />
-      <Button layoutX="277.0" layoutY="417.0" mnemonicParsing="false" text="Weather and Road Condition Alerts" />
-      <Button layoutX="317.0" layoutY="458.0" mnemonicParsing="false" text="Emergency Assistance" />
+      <Button layoutX="267.0" layoutY="160.0" mnemonicParsing="false" onAction="#restAreaButtonOnClick" text="Rest Area and Fuel Station Information" />
+      <Button layoutX="345.0" layoutY="205.0" mnemonicParsing="false" onAction="#trafficUpdatesButtonOnClick" text="Traffic Updates" />
+      <Button layoutX="354.0" layoutY="248.0" mnemonicParsing="false" onAction="#driverTimerButtonOnClick" text="Driver Timer" />
+      <Button layoutX="310.0" layoutY="292.0" mnemonicParsing="false" onAction="#customizeVehicleButtonOnClick" text="Customize Vehicle Profile" />
+      <Button layoutX="307.0" layoutY="336.0" mnemonicParsing="false" onAction="#complianceNotificationsButtonOnClick" text="Compliance Notifications" />
+      <Button layoutX="350.0" layoutY="377.0" mnemonicParsing="false" onAction="#hazardAlertsButtonOnClick" text="Hazard Alerts" />
+      <Button layoutX="277.0" layoutY="417.0" mnemonicParsing="false" onAction="#weatherAndRoadConditionAlertsButtonOnClick" text="Weather and Road Condition Alerts" />
+      <Button layoutX="317.0" layoutY="458.0" mnemonicParsing="false" onAction="#emergencyAssistanceButtonOnClick" text="Emergency Assistance" />
       <Button layoutX="370.0" layoutY="508.0" mnemonicParsing="false" onAction="#logoutButtonOnClick" text="Logout" />
    </children>
 </AnchorPane>

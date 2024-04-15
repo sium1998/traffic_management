@@ -4,7 +4,13 @@
  */
 package mainpkg;
 
+<<<<<<< HEAD
+import hasibul.modelclasses.RoadData;
+import hasibul.modelclasses.CommercialDriver;
+import hasibul.modelclasses.RestStation;
+=======
 import hasibul.RoadData;
+>>>>>>> main
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -42,8 +48,29 @@ public class MainApplication extends Application {
         initializeIncidentReports();
         initializeMessageThreads();
         createDummyUsers();
+<<<<<<< HEAD
+        initializeRestStations();
+=======
+>>>>>>> main
 
         launch(args);
+    }
+    
+    public static void initializeRestStations() throws IOException
+    {
+        File f = new File("RestStation.bin");
+        if (f.exists())
+        {
+            f.delete();
+        }
+        RestStation rs = new RestStation("Station 1", "Dhaka", "Baridhara", "Baridhara Main Road", "Rest Area");
+        rs.saveNewToDatabase();
+        rs = new RestStation("Station 2", "Dhaka", "Baridhara", "Road 2", "Rest Area");
+        rs.saveNewToDatabase();
+        rs = new RestStation("Station 3", "Barishal", "Chahutpur", "Road 3", "Fuel Station");
+        rs.saveNewToDatabase();
+        rs = new RestStation("Station 4", "Noakhali", "Maijdee", "Main Road", "Rest Area & Fuel Station");
+        rs.saveNewToDatabase();
     }
     
     private static void initializeRoadData() throws IOException
@@ -113,6 +140,10 @@ public class MainApplication extends Application {
         File f;
         IncidentDepartmentManager user1;
         BankingManager user2;
+<<<<<<< HEAD
+        CommercialDriver user3;
+=======
+>>>>>>> main
         
         f = new File("IncidentDepartmentManager.bin");
         
@@ -129,5 +160,16 @@ public class MainApplication extends Application {
             user2 = new BankingManager("Sristy2", "1234567");
             user2.saveNewToDatabase();
         }
+<<<<<<< HEAD
+        
+        f = new File("CommercialDriver.bin");
+        
+        if (!f.exists())
+        {
+            user3 = new CommercialDriver("Hasibul1", "1234567");
+            user3.saveNewToDatabase();
+        }
+=======
+>>>>>>> main
     }
 }

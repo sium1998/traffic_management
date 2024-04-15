@@ -4,6 +4,8 @@
  */
 package hasibul;
 
+import hasibul.modelclasses.RoadDataTableClass;
+import hasibul.modelclasses.RoadData;
 import hasibul.modelclasses.CommercialDriver;
 import java.io.IOException;
 import java.net.URL;
@@ -44,10 +46,29 @@ public class TrafficUpdatesSceneController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        commercialDriverUser = new CommercialDriver("Username", "Password");
         
         roadNumberTableColumn.setCellValueFactory(new PropertyValueFactory<>("roadNumber"));
         roadStatusTableColumn.setCellValueFactory(new PropertyValueFactory<>("roadStatus"));
+    }
+
+    @FXML
+    private void backToDashboardButtonOnClick(ActionEvent event) throws IOException {
+        Button button = (Button) event.getSource();
+        Scene currentScene = button.getScene();
+        Stage currentStage = (Stage) currentScene.getWindow();
+        
+        FXMLLoader loader = new FXMLLoader(CommercialDriverDashboardSceneController.class.getResource("CommercialDriverDashboardScene.fxml"));
+        
+        Scene newScene = new Scene(loader.load());
+        
+        CommercialDriverDashboardSceneController controllerClass = loader.getController();
+        controllerClass.initializeScene(commercialDriverUser);
+
+        currentStage.setScene(newScene);
+    }
+
+    void initializeScene(CommercialDriver user) {
+        this.commercialDriverUser = user;
         
         try {
             ArrayList<RoadData> allRoadData = commercialDriverUser.loadAllRoadDataFromDatabase();
@@ -57,28 +78,11 @@ public class TrafficUpdatesSceneController implements Initializable {
                 trafficUpdatesTableView.getItems().addAll(new RoadDataTableClass(eachRoadData.getRoadNumber(), eachRoadData.getStatus()));
             }
             
-            trafficUpdatesTableView.refresh();
-            
-            System.out.println("allRoadData: " + allRoadData);
-            
         } catch (IOException ex) {
             Logger.getLogger(TrafficUpdatesSceneController.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(TrafficUpdatesSceneController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
-
-    @FXML
-    private void backToDashboardButtonOnClick(ActionEvent event) throws IOException {
-        Button button = (Button) event.getSource();
-        Scene currentScene = button.getScene();
-        Stage currentStage = (Stage) currentScene.getWindow();
-        
-        Parent root = FXMLLoader.load(CommercialDriverDashboardSceneController.class.getResource("CommercialDriverDashboardScene.fxml"));
-        
-        Scene newScene = new Scene(root);
-
-        currentStage.setScene(newScene);
     }
     
 }
