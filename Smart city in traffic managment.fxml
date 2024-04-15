@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="786.0" prefWidth="1104.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Mainpkg.SmartCityInTrafficManagmentController">
+   <children>
+      <Label fx:id="welcomedashboard" layoutX="346.0" layoutY="34.0" text="Welcome to Smart city in traffic managment" textFill="#104e7a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="150.0" text="City:" />
+      <TextField fx:id="citynametextfield" layoutX="191.0" layoutY="145.0" />
+      <TextField fx:id="trafficareatextfield" layoutX="191.0" layoutY="187.0" />
+      <TextField fx:id="trafficcondtextfield" layoutX="194.0" layoutY="347.0" />
+      <TextField fx:id="citymayortextfield" layoutX="194.0" layoutY="286.0" />
+      <TextField fx:id="officernametextfield" layoutX="192.0" layoutY="240.0" />
+      <Label layoutX="91.0" layoutY="192.0" text="Traffic Area:" />
+      <Label layoutX="85.0" layoutY="245.0" text=" officer name:" />
+      <Label layoutX="99.0" layoutY="291.0" text="City Mayor:" />
+      <Label layoutX="53.0" layoutY="355.0" text="Traffic condition:" />
+      <Label layoutX="15.0" layoutY="402.0" text="public transfor information: " />
+      <TextField fx:id="ptitextfield" layoutX="203.0" layoutY="397.0" />
+      <TableView fx:id="informationallview" layoutX="85.0" layoutY="566.0" prefHeight="200.0" prefWidth="950.0">
+        <columns>
+          <TableColumn fx:id="citytablecol" prefWidth="75.0" text="City" />
+          <TableColumn fx:id="trafficareatablecol" prefWidth="114.0" text="Traffic Area" />
+            <TableColumn fx:id="officertablecol" prefWidth="151.0" text=" officer name" />
+            <TableColumn fx:id="mayortablecol" prefWidth="122.0" text="city mayor" />
+            <TableColumn fx:id="trafficcondtablecol" prefWidth="152.0" text="traffic codition" />
+            <TableColumn fx:id="ptntablecol" prefWidth="181.0" text="Public transfor inform" />
+            <TableColumn fx:id="closeroadtablecol" prefWidth="181.0" text="close Road" />
+        </columns>
+      </TableView>
+      <Button fx:id="submitbutton" layoutX="493.0" layoutY="490.0" mnemonicParsing="false" text="Submit" textFill="#1360cd" />
+      <TextArea fx:id="livemapstextarea" layoutX="511.0" layoutY="127.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="552.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" live Google maps" />
+      <TextArea fx:id="cameraandmonitextarea" layoutX="797.0" layoutY="130.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="819.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="camera and monitoring" />
+      <Label layoutX="151.0" layoutY="454.0" text="Date:" />
+      <Label fx:id="allinform" layoutX="460.0" layoutY="534.0" text="Show all informaton" />
+      <DatePicker fx:id="datepicker" layoutX="210.0" layoutY="449.0" />
+   </children>
+</AnchorPane>

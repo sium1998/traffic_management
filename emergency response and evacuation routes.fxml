@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="699.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mainpkg.EmergencyResponseAndEvacuationRoutesController">
+   <children>
+      <TextField layoutX="322.0" layoutY="31.0" prefHeight="31.0" prefWidth="370.0" style="-fx-background-color: fffff;" text="Emergency response and evacuation routes" />
+      <Label layoutX="847.0" layoutY="33.0" text="Emergency Help" textFill="#c31515" />
+      <Label layoutX="28.0" layoutY="191.0" text="Accidents Area:" />
+      <TextField fx:id="areatextfield" layoutX="153.0" layoutY="186.0" />
+      <TextField fx:id="officernametextfield" layoutX="171.0" layoutY="303.0" />
+      <TextField fx:id="thanatextfield" layoutX="144.0" layoutY="246.0" />
+      <TextField fx:id="hospitaltextfield" layoutX="549.0" layoutY="246.0" />
+      <TextField fx:id="ambulancetextfield" layoutX="556.0" layoutY="319.0" />
+      <TextField fx:id="officernumtextfield" layoutX="164.0" layoutY="386.0" />
+      <Label layoutX="28.0" layoutY="251.0" text="Nearest thana:" />
+      <Label layoutX="10.0" layoutY="386.0" text="Duty Officer Number:" />
+      <Label layoutX="28.0" layoutY="308.0" text="Duty Officer Name:" />
+      <ComboBox fx:id="vehicletypecombobox" layoutX="556.0" layoutY="176.0" prefWidth="150.0" />
+      <Label layoutX="451.0" layoutY="181.0" text="Vehicle type:" />
+      <Label layoutX="465.0" layoutY="251.0" text="Hospital:" />
+      <Label layoutX="455.0" layoutY="324.0" text="Ambulance:" />
+      <Label layoutX="25.0" layoutY="134.0" text="Accidents Date:" />
+      <TextField fx:id="accidentsdatetextfield" layoutX="144.0" layoutY="129.0" />
+      <Button fx:id="allinfbtn" layoutX="524.0" layoutY="402.0" mnemonicParsing="false" text="show All Information" />
+      <TextArea fx:id="outputtextarea" layoutX="185.0" layoutY="466.0" prefHeight="200.0" prefWidth="608.0" />
+      <TextField fx:id="livelocationtextfield" layoutX="538.0" layoutY="119.0" />
+      <Label layoutX="437.0" layoutY="124.0" text="Live location;" />
+      <Label layoutX="784.0" layoutY="33.0" text="Pop up:" />
+   </children>
+</AnchorPane>

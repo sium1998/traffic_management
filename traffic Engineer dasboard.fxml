@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mainpkg.TrafficEngineerDasboardController">
+   <children>
+      <Label fx:id="usernamelabel" layoutX="335.0" layoutY="28.0" prefHeight="49.0" prefWidth="270.0" text="Traffic Engineers">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="smatcitybtn" layoutX="325.0" layoutY="159.0" mnemonicParsing="false" text="Smart city in traffic managment" textFill="#7f0da1" />
+      <Button fx:id="ptsbtn" layoutX="332.0" layoutY="307.0" mnemonicParsing="false" text=" public transportation systems" textFill="#9816a1" />
+      <Button fx:id="accidentsandsafetybtn" layoutX="299.0" layoutY="370.0" mnemonicParsing="false" text="traffic acidents and improve Road safety" textFill="#9816a1" />
+      <Button fx:id="trafficaccidentsbtn" layoutX="290.0" layoutY="235.0" mnemonicParsing="false" text=" Traffic accidents and improve road safety " textFill="#9816a1" />
+      <Button fx:id="safetybtn" layoutX="405.0" layoutY="498.0" mnemonicParsing="false" text="safety " textFill="#9816a1" />
+      <Button fx:id="environmentbtn" layoutX="392.0" layoutY="572.0" mnemonicParsing="false" text="enviroment" textFill="#9816a1" />
+      <Button fx:id="emergencybtn" layoutX="362.0" layoutY="427.0" mnemonicParsing="false" text="Emergency response" textFill="#9816a1" />
+      <Button fx:id="logoutbtn" layoutX="406.0" layoutY="648.0" mnemonicParsing="false" text="Log out" />
+      <Line endX="229.0" layoutX="440.0" layoutY="77.0" startX="-224.0" />
+   </children>
+</AnchorPane>
