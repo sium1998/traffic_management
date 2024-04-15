@@ -6,14 +6,20 @@ package hasibul;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ListView;
 
 /**
  * FXML Controller class
  *
- * @author Dell
+ * @author sajee
  */
-public class EmergencyAssistanceRequestPopUpController implements Initializable {
+public class WeatherAndRoadConditionAlertListSceneController implements Initializable {
+
+    @FXML
+    private ListView<?> notificationListView;
 
     /**
      * Initializes the controller class.
@@ -22,5 +28,9 @@ public class EmergencyAssistanceRequestPopUpController implements Initializable 
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void openNotificationButtonOnClick(ActionEvent event) {
+    }
     
 }

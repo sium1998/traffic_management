@@ -14,11 +14,11 @@
             <Font name="Bauhaus 93" size="36.0" />
          </font>
       </Label>
-      <Button layoutX="437.0" layoutY="521.0" mnemonicParsing="false" text="Go back to Dashboard" />
-      <ListView fx:id="notificationListView" layoutX="67.0" layoutY="157.0" prefHeight="348.0" prefWidth="672.0" />
-      <Button layoutX="150.0" layoutY="521.0" mnemonicParsing="false" onAction="#openInquiryButtonOnClick" text="Open Selected Thread" />
-      <Button layoutX="529.0" layoutY="114.0" mnemonicParsing="false" text="+ Add New Message Thread" />
-      <TextField layoutX="328.0" layoutY="114.0" />
+      <Button layoutX="437.0" layoutY="521.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnClick" text="Go back to Dashboard" />
+      <ListView fx:id="threadListView" layoutX="67.0" layoutY="157.0" prefHeight="348.0" prefWidth="672.0" />
+      <Button layoutX="150.0" layoutY="521.0" mnemonicParsing="false" onAction="#openThreadButtonOnClick" text="Open Selected Thread" />
+      <Button layoutX="529.0" layoutY="114.0" mnemonicParsing="false" onAction="#addThreadButtonOnClick" text="+ Add New Message Thread" />
+      <TextField fx:id="subjectTextField" layoutX="328.0" layoutY="114.0" />
       <Label layoutX="118.0" layoutY="119.0" text="New Message Thread Subject:" />
    </children>
 </AnchorPane>

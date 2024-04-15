@@ -20,7 +20,7 @@
             <Font name="Bauhaus 93" size="37.0" />
          </font>
       </Label>
-      <Label layoutX="358.0" layoutY="291.0" text="Email">
+      <Label layoutX="321.0" layoutY="287.0" text="Username">
          <font>
             <Font name="Calibri" size="38.0" />
          </font>
@@ -30,7 +30,7 @@
             <Font name="Calibri" size="38.0" />
          </font>
       </Label>
-      <TextField fx:id="emailTextField" layoutX="210.0" layoutY="335.0">
+      <TextField fx:id="usernameTextField" layoutX="210.0" layoutY="335.0">
          <font>
             <Font name="Calibri" size="32.0" />
          </font>

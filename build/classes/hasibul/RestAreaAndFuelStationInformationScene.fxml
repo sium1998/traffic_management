@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="hasibul.RestAreaAndFuelStationInformationSceneController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasibul.RestAreaAndFuelStationInformationSceneController">
    <children>
       <Label layoutX="96.0" layoutY="22.0" text="Rest area and Fuel Station Information">
          <font>
@@ -23,19 +22,20 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TableView layoutX="49.0" layoutY="257.0" prefHeight="246.0" prefWidth="682.0">
+      <TableView fx:id="restStationTableView" layoutX="49.0" layoutY="257.0" prefHeight="246.0" prefWidth="682.0">
         <columns>
-          <TableColumn prefWidth="342.0" text="Name of Station" />
-          <TableColumn prefWidth="339.0" text="Address" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="238.0" text="Name of Station" />
+          <TableColumn fx:id="locationTableColumn" prefWidth="299.0" text="Location" />
+            <TableColumn fx:id="typeTableColumn" prefWidth="144.0" text="Type" />
         </columns>
       </TableView>
-      <Button layoutX="317.0" layoutY="543.0" mnemonicParsing="false" text="Go Back to Dashboard" />
-      <Button layoutX="571.0" layoutY="99.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" text="Show list of locations" textAlignment="CENTER" wrapText="true">
+      <Button layoutX="317.0" layoutY="543.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnClick" text="Go Back to Dashboard" />
+      <Button layoutX="571.0" layoutY="99.0" mnemonicParsing="false" onAction="#showButtonOnClick" prefHeight="140.0" prefWidth="160.0" text="Show list of locations" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <ComboBox layoutX="250.0" layoutY="107.0" prefWidth="150.0" />
-      <ComboBox layoutX="250.0" layoutY="161.0" prefWidth="150.0" />
+      <ComboBox fx:id="cityComboBox" layoutX="250.0" layoutY="107.0" onAction="#cityComboBoxOnItemSelected" prefWidth="150.0" />
+      <ComboBox fx:id="areaComboBox" layoutX="250.0" layoutY="161.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

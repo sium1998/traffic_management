@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="hasibul.EmergencyAssistanceRequestPopUpController">
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasibul.EmergencyAssistanceRequestPopUpSceneController">
    <children>
       <Label layoutX="88.0" layoutY="14.0" text="Request Emergency Assistance">
          <font>
@@ -15,7 +14,7 @@
          </font>
       </Label>
       <Label layoutX="24.0" layoutY="57.0" text="Please enter your current location:" />
-      <TextArea layoutX="24.0" layoutY="86.0" prefHeight="120.0" prefWidth="460.0" />
-      <Button layoutX="143.0" layoutY="213.0" mnemonicParsing="false" text="Request Emergency Assistance" />
+      <TextArea fx:id="locationTextArea" layoutX="24.0" layoutY="86.0" prefHeight="120.0" prefWidth="460.0" />
+      <Button layoutX="143.0" layoutY="213.0" mnemonicParsing="false" onAction="#requestEmergencyAssistanceButtonOnClick" text="Request Emergency Assistance" />
    </children>
 </AnchorPane>
