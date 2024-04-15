@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="677.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="awarenesscampaignmanager.PrepareGuideController">
+   <children>
+      <Label layoutX="41.0" layoutY="14.0" prefHeight="42.0" prefWidth="174.0" text="Carpool" />
+      <Label layoutX="41.0" layoutY="56.0" prefHeight="42.0" prefWidth="121.0" text="Bicycling" />
+      <Label layoutX="41.0" layoutY="98.0" prefHeight="42.0" prefWidth="121.0" text="Walking" />
+      <Label layoutX="41.0" layoutY="140.0" prefHeight="42.0" prefWidth="121.0" text="Choice of right car" />
+      <Label layoutX="41.0" layoutY="189.0" prefHeight="42.0" prefWidth="121.0" text="Electric vehicles" />
+      <Label layoutX="41.0" layoutY="231.0" prefHeight="42.0" prefWidth="220.0" text="Importance of reducing carbon emission" />
+      <Label layoutX="41.0" layoutY="273.0" prefHeight="42.0" prefWidth="188.0" text="Percentage of carbon emitted" />
+      <Label layoutX="41.0" layoutY="315.0" prefHeight="42.0" prefWidth="121.0" text="Dangers" />
+      <Label layoutX="41.0" layoutY="357.0" prefHeight="42.0" prefWidth="121.0" text="Additional notes" />
+      <TextField fx:id="carPoolTextField" layoutX="193.0" layoutY="23.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="bicyclingTextField" layoutX="193.0" layoutY="65.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="walkingTextField" layoutX="193.0" layoutY="107.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="choiceOfRightCarTextField" layoutX="193.0" layoutY="149.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="electricVehiclesTextField" layoutX="193.0" layoutY="198.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="dangersTextField" layoutX="193.0" layoutY="324.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="additionalNotesTextField" layoutX="193.0" layoutY="366.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="importanceOfReducingCarbonEmissionTextField" layoutX="261.0" layoutY="238.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="percentageOfCarbonEmittedTextField" layoutX="243.0" layoutY="282.0" prefHeight="25.0" prefWidth="390.0" />
+      <Button layoutX="243.0" layoutY="414.0" mnemonicParsing="false" onAction="#confirmButtonOnMouseClicked" prefHeight="62.0" prefWidth="161.0" text="Confirm" />
+   </children>
+</AnchorPane>

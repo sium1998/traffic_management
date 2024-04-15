@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="awarenesscampaignmanager.AwarenessCampaignManagerDashboardController">
+   <children>
+      <Label layoutX="106.0" layoutY="14.0" prefHeight="64.0" prefWidth="411.0" text="Awareness Campaign Manager Dashboard">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="145.0" layoutY="87.0" mnemonicParsing="false" onAction="#decreaseSpeedingViolationsButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text="Decrease speeding violations" />
+      <Button layoutX="145.0" layoutY="128.0" mnemonicParsing="false" onAction="#educatePedestriansButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text="Educate pedestrians" />
+      <Button layoutX="145.0" layoutY="175.0" mnemonicParsing="false" onAction="#prepareGuideButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text="Prepare guide on carbon emission" />
+      <Button layoutX="145.0" layoutY="220.0" mnemonicParsing="false" onAction="#planDistributionButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text="Plan distribution" />
+      <Button layoutX="145.0" layoutY="265.0" mnemonicParsing="false" onAction="#createNewCampaignProjectButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text="Create new campaign project" />
+      <Button layoutX="145.0" layoutY="312.0" mnemonicParsing="false" onAction="#addUpdateCampaignWorkerDetailsButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text="Add/Update campaign worker details" />
+      <Button layoutX="145.0" layoutY="360.0" mnemonicParsing="false" onAction="#createCampaignSchedulesButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text="Create campaign schedules" />
+      <Button layoutX="145.0" layoutY="405.0" mnemonicParsing="false" onAction="#conductAwarenessSurveysButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text=" Conduct awareness surveys" />
+      <Button layoutX="145.0" layoutY="451.0" mnemonicParsing="false" onAction="#logOutButtonOnMouseClicked" prefHeight="34.0" prefWidth="288.0" text="Log out" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="awarenesscampaignmanager.CreateCampaignSchedulesController">
+   <children>
+      <Label layoutX="47.0" layoutY="41.0" prefHeight="28.0" prefWidth="115.0" text="Time of campaign" />
+      <Label layoutX="47.0" layoutY="83.0" prefHeight="28.0" prefWidth="115.0" text="Date of campaign" />
+      <Label layoutX="47.0" layoutY="125.0" prefHeight="28.0" prefWidth="115.0" text="Place of campaign" />
+      <Label layoutX="47.0" layoutY="163.0" prefHeight="28.0" prefWidth="115.0" text="Agenda of campaign" />
+      <Label layoutX="47.0" layoutY="208.0" prefHeight="28.0" prefWidth="115.0" text="Workers available" />
+      <DatePicker fx:id="dateOfCampaignDatePicker" layoutX="155.0" layoutY="85.0" />
+      <TextField fx:id="placeOfCampaignTextField" layoutX="155.0" layoutY="127.0" />
+      <TextField fx:id="agendaOfCampaignTextField" layoutX="180.0" layoutY="165.0" />
+      <TextField fx:id="workersAvailableTextField" layoutX="168.0" layoutY="209.0" prefHeight="25.0" prefWidth="135.0" />
+      <TextField fx:id="timeOfCampaignTextField" layoutX="168.0" layoutY="43.0" />
+      <Button layoutX="226.0" layoutY="256.0" mnemonicParsing="false" onAction="#createCampaignButtonOnMouseClicked" prefHeight="95.0" prefWidth="149.0" text="Create campaign" />
+      <Button layoutX="41.0" layoutY="256.0" mnemonicParsing="false" onAction="#notifyWorkersButtonOnMouseClicked" prefHeight="95.0" prefWidth="135.0" text="Notify workers" />
+   </children>
+</AnchorPane>
