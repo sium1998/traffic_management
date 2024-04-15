@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package awarenesscampaignmanager;
+package tasfia.awarenesscampaignmanager;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -38,9 +38,9 @@ public class EducatePedestriansController implements Initializable {
     @FXML
     private TextField messageTextField;
     @FXML
-    private TableView<?> pedestrianTableView;
+    private TableView<Pedestrain> pedestrianTableView;
     @FXML
-    private TableColumn<?, ?> locationTableColumn;
+    private TableColumn<Pedestrain, ?> locationTableColumn;
     @FXML
     private TableColumn<?, ?> targetAudienceTableColumn;
     @FXML
@@ -62,6 +62,10 @@ public class EducatePedestriansController implements Initializable {
 
     @FXML
     private void confirmButtonOnMouseClicked(ActionEvent event) {
+    }
+
+    @FXML
+    private void backButtonOnMouseClicked(ActionEvent event) {
     }
     
 }
